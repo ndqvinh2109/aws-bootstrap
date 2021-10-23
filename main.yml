@@ -89,9 +89,7 @@ Resources:
           . /home/ec2-user/.bashrc
 
           # Install NVM, NPM, Node.JS
-          nvm alias default v12.7.0
-          nvm install v12.7.0
-          nvm use v12.7.0
+          nvm install node
 
           # Download latest code, unzip it into /home/ec2-user/app
           wget https://github.com/ndqvinh2109/aws-bootstrap/archive/main.zip 
@@ -104,6 +102,7 @@ Resources:
           # Run server
           cd app
           npm install -g npm@6.14.4
+          npm audit fix
           npm start
         EOF
 
