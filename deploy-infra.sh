@@ -1,12 +1,9 @@
-#!/bin/bash
-
 STACK_NAME=awsbootstrap 
 REGION=ap-southeast-1a
 CLI_PROFILE=awsbootstrap
 
 EC2_INSTANCE_TYPE=t2.micro 
 
-# Deploy the CloudFormation template
 echo -e "\n\n=========== Deploying main.yml ==========="
 aws cloudformation deploy \
   --region $REGION \
